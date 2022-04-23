@@ -1,0 +1,190 @@
+.comprar-bg {
+  background: linear-gradient(var(--cor-13) 500px, var(--cor-0) 0px);
+}
+
+.comprar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.comprar-opcoes::after {
+  content: "";
+  display: block;
+  width: 52px;
+  height: 52px;
+  background: url("../../img/dec/dec-bottom-left.svg") no-repeat;
+  position: absolute;
+  left: 0px;
+  bottom: -100px;
+  opacity: 0.5;
+}
+
+.comprar-opcoes {
+  background: var(--cor-12);
+  padding: 20px;
+  border-radius: 4px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.comprar-opcoes h2 {
+  margin-bottom: 20px;
+}
+
+.comprar-opcoes label {
+  display: flex;
+  align-items: center;
+  gap: 20px 12px;
+  background: var(--cor-9);
+  color: var(--cor-11);
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.comprar-opcoes label:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.comprar-opcoes input:checked + label:not(:last-of-type) {
+  margin-bottom: 0px;
+}
+
+.comprar-opcoes label::before {
+  content: "";
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  box-sizing: border-box;
+  background-color: var(--cor-0);
+  border-radius: 50%;
+  border: 2px solid var(--cor-13);
+}
+
+.comprar-opcoes input:checked + label::before {
+  border-color: var(--cor-13);
+  box-shadow: inset 0 0 0 5px var(--cor-0), inset 0 0 0 25px var(--cor-12);
+}
+
+.comprar-opcoes input {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.comprar-opcoes input:checked + label {
+  background-color: var(--cor-0);
+  color: var(--cor-13);
+  padding: 8px 16px;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.comprar-conteudo {
+  display: none;
+}
+
+.comprar-conteudo h3 {
+  margin-bottom: 20px;
+}
+
+.comprar-conteudo li + li {
+  margin-top: 12px;
+}
+
+.comprar-opcoes input:checked + label + .comprar-conteudo {
+  background: var(--cor-0);
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 20px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.comprar-opcoes input:checked + label + .comprar-conteudo:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.comprar-formulario {
+  margin-top: 60px;
+}
+
+.comprar-formulario .botao-comprar {
+  grid-column: 1/-1;
+}
+
+.botao-comprar {
+  margin-top: 20px;
+}
+
+@media (max-width: 1000px) {
+  .comprar-opcoes h2 {
+    font-size: 2rem;
+  }
+
+  .comprar-opcoes label {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .comprar-opcoes input:checked + label + .comprar-conteudo {
+    grid-template-columns: 1fr;
+  }
+
+  .comprar-opcoes h2 {
+    font-size: 1.5rem;
+  }
+
+  .comprar-opcoes label {
+    font-size: 1.4rem;
+  }
+  .comprar-opcoes p {
+    display: none;
+  }
+  label.logradouro,
+  label.cep {
+    color: var(--cor-0);
+  }
+}
+
+@media (max-width: 600px) {
+  .comprar-bg {
+    background: var(--cor-13);
+  }
+  .comprar {
+    grid-template-columns: 1fr;
+  }
+
+  .comprar-opcoes::after {
+    display: none;
+  }
+
+  label.numero,
+  label.bairro,
+  label.cidade,
+  label.estado {
+    color: var(--cor-0);
+  }
+  .comprar-formulario {
+    margin-top: 0px;
+  }
+  .comprar {
+    gap: 28px;
+  }
+}
+
+@media (max-width: 400px) {
+  .comprar-formulario label {
+    font: 0.875rem;
+  }
+  .comprar-opcoes label {
+    font-size: 1.2rem;
+  }
+  .comprar-opcoes label::before {
+    width: 24px;
+    height: 24px;
+  }
+}

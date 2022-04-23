@@ -1,0 +1,48 @@
+body {
+  margin: 0px;
+  font-family: "IBM Plex Sans", Arial, sans-serif;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.subtitulo {
+  word-break: break-all;
+  font-size: 8rem;
+  line-height: 1;
+  text-transform: uppercase;
+  font-family: "Source Serif Pro", serif;
+  max-width: 5ch;
+}
+
+@media (max-width: 800px) {
+  .subtitulo {
+    word-break: normal;
+    max-width: initial;
+    text-transform: capitalize;
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .subtitulo {
+    font-size: 2.5rem;
+  }
+}

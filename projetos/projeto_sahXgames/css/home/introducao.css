@@ -1,0 +1,70 @@
+.introducao {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  gap: 40px;
+}
+
+.introducao-conteudo {
+  align-self: center;
+  background: url("../../img/dec/dec-bottom-right.svg") no-repeat bottom 0px
+    right 20px;
+}
+
+.introducao-conteudo h1 {
+  margin-bottom: 20px;
+}
+
+.introducao-conteudo h1::before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 12px;
+  background-color: var(--cor-p1);
+  margin-bottom: 8px;
+}
+
+.introducao p {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1000px) {
+  .introducao-conteudo h1 {
+    font-size: 2.5rem;
+  }
+
+  .introducao p {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao {
+    gap: 20px;
+  }
+  .introducao-conteudo h1 {
+    font-size: 1.5rem;
+  }
+  .introducao-conteudo p {
+    font-size: 1rem;
+    margin-bottom: 32px;
+  }
+  .introducao-conteudo h1::before {
+    width: 40px;
+    height: 8px;
+  }
+  .introducao-conteudo {
+    background: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+  .introducao img {
+    display: none;
+  }
+  .introducao-conteudo p {
+    max-width: 45ch;
+  }
+}

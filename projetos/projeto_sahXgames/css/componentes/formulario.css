@@ -1,0 +1,39 @@
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 20px;
+}
+.form .span-2 {
+  grid-column: span 2;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="number"],
+.form textarea {
+  padding: 12px;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid var(--cor-11);
+  border-radius: 4px;
+  font: 400 1.25rem/1.6 "Roboto";
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: none;
+  border: 1px solid var(--cor-p4);
+  border-radius: 4px;
+  box-shadow: 0 0 0 2px var(--cor-p1);
+}
+
+@media (max-width: 800px) {
+  #comprar .form {
+    gap: 20px;
+  }
+}

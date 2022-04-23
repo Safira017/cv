@@ -1,0 +1,59 @@
+.footer {
+  background-color: #000;
+  color: #fff;
+}
+
+.footer_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 20px 60px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.footer_texto {
+  color: #b2b2b2;
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+.footer .lista_contato {
+  font-size: 2.25rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer .lista_contato a {
+  color: inherit;
+}
+
+.footer_copy {
+  color: #a3a3a3;
+  font-size: 1.125rem;
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 800px) {
+  .footer_container {
+    grid-template-columns: 1fr;
+    padding: 60px 20px;
+    gap: 40px;
+  }
+  .footer_texto {
+    font-size: 1.4rem;
+  }
+
+  .footer .lista_contato {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .footer .lista_contato {
+    font-size: 1.25rem;
+  }
+}

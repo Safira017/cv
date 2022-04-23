@@ -1,0 +1,99 @@
+.formacao {
+  background-color: #141414;
+}
+
+.formacao_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 20px 60px 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+}
+
+.formacao .subtitulo {
+  color: #000;
+  max-width: 6ch;
+}
+
+.formacao_texto {
+  color: #b2b2b2;
+  max-width: 40ch;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  margin-bottom: 60px;
+}
+
+.formacao_texto strong {
+  color: #fff;
+}
+
+.lista_cursos {
+  margin-bottom: 40px;
+}
+
+.formacao_extra h3.cursos,
+.formacao_extra h3.idiomas {
+  color: #a3a3a3;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.formacao_extra h3::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  left: -40px;
+  top: -2px;
+}
+
+.formacao_extra h3.cursos::before {
+  background: url("../img/cursos.svg");
+}
+
+.formacao_extra h3.idiomas::before {
+  background: url("../img/idiomas.svg");
+}
+
+.formacao_extra ul.lista_cursos li:first-child {
+  margin-bottom: 20px;
+}
+
+.formacao_extra li:not(.lista_idiomas) {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formacao_extra li {
+  font-size: 1.125rem;
+  color: #fff;
+}
+
+.formacao_extra li span {
+  color: #a3a3a3;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 800px) {
+  .formacao_container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 60px 20px;
+  }
+
+  .formacao .subtitulo {
+    color: #fff;
+  }
+
+  .formacao_extra h3::before {
+    position: initial;
+  }
+
+  .formacao_texto {
+    font-size: 1.4rem;
+  }
+}

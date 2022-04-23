@@ -1,0 +1,57 @@
+main {
+  margin-top: 20px;
+  color: #0000008c;
+}
+
+#intro-schedules,
+#info-tables {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+#info-tables {
+  margin-top: 30px;
+}
+
+table {
+  width: 70%;
+  border: none;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table th {
+  padding: 10px;
+  background-color: aqua;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+table td {
+  text-align: center;
+  padding: 10px;
+}
+
+table tr:nth-of-type(2n) {
+  background-color: whitesmoke;
+}
+
+@media screen and (max-width: 280px) {
+  #intro-schedules p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  #intro-schedules p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  table {
+    width: 90%;
+  }
+}

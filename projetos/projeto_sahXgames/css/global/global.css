@@ -1,0 +1,26 @@
+body,
+ul,
+h1,
+h2,
+h3,
+h4,
+p,
+dl,
+dd {
+  margin: 0px;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

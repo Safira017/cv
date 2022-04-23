@@ -1,0 +1,147 @@
+.consoles-bg {
+  background-color: var(--cor-1);
+}
+
+.consoles-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.consoles-bg ul {
+  margin-top: 20px;
+}
+
+#consoles .consoles-container {
+  padding: 0px 20px;
+}
+
+#consoles li.console-bg {
+  margin-top: 0px;
+}
+
+li.console-bg:nth-child(odd) {
+  background: linear-gradient(to right, var(--cor-1) 30%, var(--cor-13) 0%);
+}
+
+li.console-bg:nth-child(even) {
+  background: linear-gradient(to right, var(--cor-1) 30%, var(--cor-0) 0%);
+}
+
+li.console-bg {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px 0px;
+  margin-top: 40px;
+  padding: 24px 0px;
+}
+
+li.console-bg > picture {
+  display: grid;
+}
+
+li.console-bg img,
+li.console-bg span {
+  grid-area: 1 / 1;
+}
+
+li.console-bg span {
+  place-self: start end;
+  margin-top: 44px;
+  background-color: var(--cor-13);
+  color: var(--cor-0);
+  padding: 8px 16px;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.console-conteudo {
+  place-self: center;
+  padding: 20px;
+}
+
+.console-conteudo h3 {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.console-conteudo h3::before {
+  display: inline-block;
+  content: "";
+  width: 8px;
+  height: 40px;
+  background-color: var(--cor-p1);
+  margin-right: 8px;
+}
+
+.console-conteudo p {
+  margin-bottom: 32px;
+}
+
+.console-conteudo a {
+  justify-self: start;
+}
+
+@media (max-width: 1020px) {
+  .console-conteudo h3 {
+    font-size: 2rem;
+  }
+
+  .console-conteudo p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  li.console-bg {
+    grid-template-columns: 1fr 1fr;
+  }
+  .console-conteudo h3 {
+    font-size: 1.8rem;
+  }
+  .console-conteudo p {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 800px) {
+  li.console-bg:nth-child(odd) {
+    background: var(--cor-13);
+  }
+
+  li.console-bg:nth-child(even) {
+    background: var(--cor-0);
+  }
+  li.console-bg {
+    grid-template-columns: 1fr;
+    padding: 0px;
+    margin-bottom: 20px;
+  }
+
+  li.console-bg img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .consoles-container {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  li.console-bg span {
+    font-size: 1.2rem;
+  }
+  .console-conteudo h3 {
+    font-size: 1.4rem;
+  }
+  .console-conteudo h3::before {
+    height: 20px;
+    width: 8px;
+  }
+  .console-conteudo p {
+    font-size: 0.8rem;
+  }
+}

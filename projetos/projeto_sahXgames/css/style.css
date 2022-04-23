@@ -1,0 +1,29 @@
+/*global*/
+@import "./global/global.css";
+@import "./animacao/animacao.css";
+@import "./global/header.css";
+@import "./global/footer.css";
+
+/*componentes*/
+@import "./componentes/tipografia.css";
+@import "./componentes/cores.css";
+@import "./componentes/componentes.css";
+@import "./componentes/formulario.css";
+
+/*home*/
+@import "./home/introducao.css";
+@import "./home/consoles-lista.css";
+@import "./home/depoimento.css";
+@import "./home/perguntas.css";
+
+/*console-interno*/
+@import "./console-interno/console.css";
+
+/*comprar*/
+@import "./comprar/comprar.css";
+
+/*contato*/
+@import "./contato/contato.css";
+
+/*termos*/
+@import "./termos/termos.css";
