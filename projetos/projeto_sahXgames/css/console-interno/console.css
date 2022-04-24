@@ -241,4 +241,7 @@
   .escolha-lista {
     grid-template-columns: 1fr;
   }
+  .escolha h3 {
+    margin: 20px 0px;
+  }
 }
