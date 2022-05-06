@@ -57,6 +57,7 @@
 .console-interno-info p {
   grid-column: span 2;
   margin-bottom: 40px;
+  color: var(--cor-5);
 }
 
 .console-interno-lista {
@@ -68,6 +69,7 @@
 
 .console-interno-item h2 {
   margin-bottom: 20px;
+  color: var(--cor-4);
 }
 
 .console-interno-item li + li {
@@ -185,6 +187,13 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
+  overflow-x: auto;
+  position: relative;
+}
+
+.escolha-lista li {
+  min-width: 220px;
+  margin-bottom: 20px;
 }
 
 .escolha-lista a {
@@ -213,6 +222,7 @@
   display: flex;
   align-items: center;
   margin-top: 8px;
+  color: var(--cor-11);
 }
 
 .escolha-lista h4::before {
@@ -226,9 +236,6 @@
 }
 
 @media (max-width: 800px) {
-  .escolha-lista {
-    grid-template-columns: repeat(2, 1fr);
-  }
   .escolha h4 {
     font-size: 1.3rem;
   }
@@ -237,10 +244,33 @@
   }
 }
 
-@media (max-width: 600px) {
-  .escolha-lista {
-    grid-template-columns: 1fr;
+@keyframes seta {
+  from {
+    right: 30px;
   }
+  to {
+    right: 20px;
+  }
+}
+
+@media (max-width: 770px) {
+  .escolha {
+    position: relative;
+  }
+  .escolha::after {
+    content: "→";
+    display: inline-block;
+    position: absolute;
+    right: 30px;
+    top: 50px;
+    color: var(--cor-3);
+    font-size: 1.5rem;
+    font-weight: bold;
+    animation: seta 0.5s ease-in 0s infinite alternate;
+  }
+}
+
+@media (max-width: 600px) {
   .escolha h3 {
     margin: 20px 0px;
   }
