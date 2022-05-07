@@ -33,7 +33,6 @@ li.console-bg {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 20px 0px;
-  margin-top: 40px;
   padding: 24px 0px;
 }
 
@@ -94,33 +93,39 @@ li.console-bg span {
 }
 
 @media (max-width: 900px) {
-  li.console-bg {
-    grid-template-columns: 1fr 1fr;
-  }
-  .console-conteudo h3 {
-    font-size: 1.8rem;
-  }
-  .console-conteudo p {
-    font-size: 0.875rem;
-  }
-}
-
-@media (max-width: 800px) {
-  li.console-bg:nth-child(odd) {
-    background: var(--cor-13);
-  }
-
+  li.console-bg:nth-child(odd),
   li.console-bg:nth-child(even) {
     background: var(--cor-0);
-  }
-  li.console-bg {
-    grid-template-columns: 1fr;
-    padding: 0px;
-    margin-bottom: 20px;
+    box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.3);
   }
 
-  li.console-bg img {
-    width: 100%;
+  .consoles-bg ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    overflow-x: auto;
+    gap: 40px;
+    padding-bottom: 40px;
+  }
+  li.console-bg {
+    grid-template-columns: minmax(260px, 1fr);
+    gap: 0px;
+    padding: 0px;
+  }
+
+  .console-conteudo {
+    place-self: start;
+  }
+
+  .console-conteudo h3 {
+    font-size: 1.8rem;
+    color: var(--cor-10);
+  }
+  .console-conteudo h3::before {
+    width: 8px;
+    height: 20px;
+  }
+  .console-conteudo p {
+    display: none;
   }
 }
 
@@ -140,8 +145,5 @@ li.console-bg span {
   .console-conteudo h3::before {
     height: 20px;
     width: 8px;
-  }
-  .console-conteudo p {
-    font-size: 0.8rem;
   }
 }

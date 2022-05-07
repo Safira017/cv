@@ -95,12 +95,13 @@
     content: "”";
     bottom: -28px;
   }
+
+  .depoimento-lista {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 450px) {
-  .depoimento-lista {
-    margin-top: 30px;
-  }
   .depoimento-item {
     grid-template-columns: 1fr;
     gap: 20px;

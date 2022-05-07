@@ -101,11 +101,13 @@
   }
   .header-menu a {
     font-size: 1rem;
+    padding: 8px 0px;
   }
   .menu-secundario a {
     font-size: 1.2rem;
   }
-  .menu-secundario {
+  .menu-secundario,
+  .header-menu {
     gap: 20px;
   }
 }
