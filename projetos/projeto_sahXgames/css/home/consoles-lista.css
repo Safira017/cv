@@ -43,6 +43,19 @@
   align-items: center;
   gap: 20px 0px;
   padding: 24px 0px;
+  position: relative;
+}
+
+.console-bg::before {
+  content: "";
+  display: block;
+  width: 52px;
+  height: 52px;
+  background: url("../../img/dec/dec-bottom-right.svg") no-repeat;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  opacity: 0.3;
 }
 
 .console-bg:hover h3::before {
@@ -103,6 +116,10 @@
 }
 
 @media (max-width: 900px) {
+  .console-bg::before {
+    display: none;
+  }
+
   .consoles-bg li:nth-child(odd),
   .consoles-bg li:nth-child(even) {
     background: var(--cor-0);

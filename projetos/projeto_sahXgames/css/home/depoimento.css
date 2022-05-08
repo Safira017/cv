@@ -11,10 +11,8 @@
 }
 
 .depoimento-item {
-  background: url("../../img/dec/dec-top-right.svg") no-repeat top 40px right
-      40px,
-    url("../../img/dec/dec-bottom-right.svg") no-repeat bottom 40px right 40px,
-    var(--cor-p1);
+  background: url("../../img/dec/dec-bottom-right.svg") no-repeat bottom 40px
+    right 40px var(--cor-p1);
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 40px;
@@ -108,5 +106,9 @@
   }
   .depoimento-conteudo {
     padding: 10px 20px;
+  }
+
+  .depoimento-conteudo p {
+    font-size: 0.875rem;
   }
 }
