@@ -17,35 +17,49 @@
   padding: 0px 20px;
 }
 
-#consoles li.console-bg {
-  margin-top: 0px;
+#consoles .consoles-bg ul {
+  margin: 10px 0px;
 }
 
-li.console-bg:nth-child(odd) {
+.consoles-bg li:nth-child(odd) {
   background: linear-gradient(to right, var(--cor-1) 30%, var(--cor-13) 0%);
 }
 
-li.console-bg:nth-child(even) {
+.consoles-bg li:nth-child(odd):hover {
+  background: linear-gradient(to right, var(--cor-1) 30%, var(--cor-12) 0%);
+}
+
+.consoles-bg li:nth-child(even) {
   background: linear-gradient(to right, var(--cor-1) 30%, var(--cor-0) 0%);
 }
 
-li.console-bg {
+.consoles-bg li:nth-child(even):hover {
+  background: linear-gradient(to right, var(--cor-1) 30%, var(--cor-3) 0%);
+}
+
+.console-bg {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  align-items: center;
   gap: 20px 0px;
   padding: 24px 0px;
 }
 
-li.console-bg > picture {
+.console-bg:hover h3::before {
+  transition: width 0.5s;
+  width: 20px;
+}
+
+.console-bg > picture {
   display: grid;
 }
 
-li.console-bg img,
-li.console-bg span {
+.console-bg img,
+.console-bg span {
   grid-area: 1 / 1;
 }
 
-li.console-bg span {
+.console-bg span {
   place-self: start end;
   margin-top: 44px;
   background-color: var(--cor-13);
@@ -78,10 +92,6 @@ li.console-bg span {
   margin-bottom: 32px;
 }
 
-.console-conteudo a {
-  justify-self: start;
-}
-
 @media (max-width: 1020px) {
   .console-conteudo h3 {
     font-size: 2rem;
@@ -93,10 +103,15 @@ li.console-bg span {
 }
 
 @media (max-width: 900px) {
-  li.console-bg:nth-child(odd),
-  li.console-bg:nth-child(even) {
+  .consoles-bg li:nth-child(odd),
+  .consoles-bg li:nth-child(even) {
     background: var(--cor-0);
     box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  }
+
+  .consoles-bg li:nth-child(odd):hover,
+  .consoles-bg li:nth-child(even):hover {
+    background: var(--cor-2);
   }
 
   .consoles-bg ul {
@@ -106,7 +121,7 @@ li.console-bg span {
     gap: 40px;
     padding-bottom: 40px;
   }
-  li.console-bg {
+  .console-bg {
     grid-template-columns: minmax(260px, 1fr);
     gap: 0px;
     padding: 0px;
@@ -136,7 +151,7 @@ li.console-bg span {
 }
 
 @media (max-width: 400px) {
-  li.console-bg span {
+  .console-bg span {
     font-size: 1.2rem;
   }
   .console-conteudo h3 {
