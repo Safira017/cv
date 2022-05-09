@@ -16,6 +16,9 @@
 @import "./home/depoimento.css";
 @import "./home/perguntas.css";
 
+/*consoles*/
+@import "./consoles/consoles.css";
+
 /*console-interno*/
 @import "./console-interno/console.css";
 
