@@ -2,6 +2,10 @@
   background: linear-gradient(to right, var(--cor-1) 30%, var(--cor-12) 0%);
 }
 
+.console-item:nth-child(odd) {
+  background: linear-gradient(to right, var(--cor-0) 30%, var(--cor-1) 0%);
+}
+
 .consoles-lista {
   display: grid;
   gap: 40px;
@@ -10,7 +14,7 @@
 .console-item {
   display: grid;
   align-items: center;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
   padding: 20px;
 }
@@ -50,7 +54,7 @@
 }
 
 .console-conteudo p {
-  max-width: 60ch;
+  max-width: 65ch;
   margin-bottom: 24px;
 }
 
@@ -67,7 +71,7 @@
   margin-top: 8px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .console-item {
     grid-template-columns: 1fr;
   }

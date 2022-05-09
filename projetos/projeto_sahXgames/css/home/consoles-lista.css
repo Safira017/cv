@@ -55,6 +55,11 @@
   width: 20px;
 }
 
+.consoles-home-bg ul {
+  display: grid;
+  gap: 20px;
+}
+
 .console-home-bg > picture {
   display: grid;
 }

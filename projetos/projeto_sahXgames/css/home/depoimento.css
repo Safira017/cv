@@ -1,5 +1,5 @@
 .depoimento-bg {
-  background: var(--cor-12);
+  background: var(--cor-p1);
 }
 
 .depoimento h2 {
@@ -12,7 +12,7 @@
 
 .depoimento-item {
   background: url("../../img/dec/dec-bottom-right.svg") no-repeat bottom 40px
-    right 40px var(--cor-p1);
+    right 40px var(--cor-12);
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 40px;

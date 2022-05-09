@@ -48,6 +48,12 @@
   letter-spacing: 0.015rem;
 }
 
+@media (max-width: 1000px) {
+  #consoles .botao {
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 800px) {
   .botao {
     font-size: 1.25rem;
