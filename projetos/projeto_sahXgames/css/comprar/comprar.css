@@ -1,5 +1,5 @@
 .comprar-bg {
-  background: linear-gradient(var(--cor-13) 500px, var(--cor-0) 0px);
+  background: linear-gradient(var(--cor-13) 520px, var(--cor-0) 0px);
 }
 
 .comprar {
@@ -186,5 +186,12 @@
   .comprar-opcoes label::before {
     width: 24px;
     height: 24px;
+  }
+}
+
+@media (max-width: 300px) {
+  .cidade,
+  .cep {
+    grid-column: 1 / -1;
   }
 }
