@@ -57,22 +57,11 @@
 
 @media (max-width: 800px) {
   .depoimento-item {
-    background: var(--cor-p1);
+    /* background: var(--cor-12); */
+    gap: 20px;
   }
   .depoimento-conteudo {
     padding: 0px 28px;
-  }
-  .depoimento-conteudo p {
-    font-size: 1.4rem;
-  }
-  .depoimento-conteudo span {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .depoimento-conteudo {
-    padding: 0px 16px;
   }
   .depoimento-conteudo p {
     font-size: 1rem;
@@ -92,6 +81,18 @@
   .depoimento-conteudo p::after {
     content: "”";
     bottom: -28px;
+  }
+}
+
+@media (max-width: 650px) {
+  .depoimento-item {
+    background: var(--cor-12);
+  }
+}
+
+@media (max-width: 600px) {
+  .depoimento-conteudo {
+    padding: 0px 16px;
   }
 
   .depoimento-lista {
