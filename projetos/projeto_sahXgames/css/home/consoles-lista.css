@@ -51,7 +51,6 @@
 }
 
 .console-home-bg:hover h3::before {
-  transition: width 0.5s;
   width: 20px;
 }
 
@@ -96,6 +95,7 @@
   height: 40px;
   background-color: var(--cor-p1);
   margin-right: 8px;
+  transition: width 0.5s;
 }
 
 .console-home-conteudo h3::after {
@@ -106,6 +106,20 @@
 
 .console-home-conteudo p {
   margin-bottom: 32px;
+}
+
+.console-home-conteudo p.estoque {
+  display: flex;
+  align-items: center;
+}
+
+.console-home-conteudo p.estoque::after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("../../img/dec/check.svg") no-repeat;
+  margin-left: 8px;
 }
 
 @media (max-width: 1020px) {
@@ -165,6 +179,10 @@
   .console-home-conteudo h3::after {
     display: none;
   }
+  .console-home-bg span {
+    font-size: 1rem;
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -174,9 +192,6 @@
 }
 
 @media (max-width: 400px) {
-  .console-home-bg span {
-    font-size: 1.2rem;
-  }
   .console-home-conteudo h3 {
     font-size: 1.4rem;
   }

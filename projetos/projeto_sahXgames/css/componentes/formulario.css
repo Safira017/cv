@@ -32,8 +32,23 @@
   box-shadow: 0 0 0 2px var(--cor-p1);
 }
 
+.form textarea {
+  resize: none;
+}
+
 @media (max-width: 800px) {
   #comprar .form {
     gap: 20px;
+  }
+
+  .form label {
+    font-size: 1.25rem;
+  }
+
+  .form input[type="text"],
+  .form input[type="email"],
+  .form input[type="number"],
+  .form textarea {
+    font-size: 1rem;
   }
 }

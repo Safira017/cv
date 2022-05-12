@@ -26,7 +26,6 @@
   display: block;
   width: 0;
   height: 4px;
-  border-radius: 4px;
   background-color: var(--cor-p1);
   margin-top: 4px;
   transition: width 0.3s;
@@ -99,15 +98,22 @@
   .logo {
     width: 250px;
   }
+  .header {
+    gap: 20px;
+  }
+
+  .header-menu {
+    gap: 12px;
+  }
   .header-menu a {
     font-size: 1rem;
     padding: 8px 0px;
   }
   .menu-secundario a {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
-  .menu-secundario,
-  .header-menu {
+
+  .menu-secundario {
     gap: 20px;
   }
 }

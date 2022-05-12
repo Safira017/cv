@@ -1,5 +1,5 @@
 .contato-bg {
-  background: linear-gradient(var(--cor-13) 350px, var(--cor-0) 0px);
+  background: linear-gradient(var(--cor-13) 340px, var(--cor-0) 0px);
 }
 
 .contato {
@@ -39,6 +39,7 @@
   }
   .contato {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .contato address {

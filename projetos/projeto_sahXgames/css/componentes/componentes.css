@@ -13,7 +13,7 @@
 .botao {
   display: inline-block;
   padding: 16px 32px;
-  background: linear-gradient(180deg, #8e0aaf 0%, #500064 100%);
+  background: linear-gradient(180deg, #8e0aaf 0%, #66008a 100%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   color: var(--cor-0);
@@ -24,7 +24,7 @@
 }
 
 .botao:hover {
-  background: linear-gradient(180deg, var(--cor-p4) 0%, var(--cor-p2) 100%);
+  background: linear-gradient(180deg, #8e0aaf 0%, #4c0067 100%);
 }
 
 .botao::after {
@@ -90,6 +90,10 @@
     font-size: 1.1rem;
     text-transform: uppercase;
     letter-spacing: 0.015rem;
+  }
+
+  .header.container {
+    padding: 20px 12px;
   }
 
   #contato .subtitulo {

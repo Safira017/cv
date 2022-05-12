@@ -76,32 +76,27 @@
   margin-top: 12px;
 }
 
-.acompanha li,
-.caracteristica li {
-  position: relative;
+.console-interno-item.disponibilidade ul li {
   display: flex;
   align-items: center;
 }
 
-.acompanha li::before,
-.caracteristica li::before {
-  left: -16px;
-  position: absolute;
+.console-interno-item.disponibilidade ul li::before {
   content: "";
   display: inline-block;
-  width: 12px;
-  height: 12px;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
 }
 
-.acompanha li::before {
-  background: url("../../img/dec/check.svg") no-repeat;
+.console-interno-item.disponibilidade ul li:first-of-type {
+  background: url("../../img/dec/cart.svg") no-repeat;
+}
+.console-interno-item.disponibilidade ul li:last-of-type {
+  background: url("../../img/dec/truck.svg") no-repeat;
 }
 
-.caracteristica li::before {
-  background: url("../../img/dec/engrenagem.svg") no-repeat;
-}
-
-.console-interno-botao {
+.console-interno-item.disponibilidade .console-interno-botao {
   position: relative;
 }
 

@@ -1,5 +1,5 @@
 .comprar-bg {
-  background: linear-gradient(var(--cor-13) 520px, var(--cor-0) 0px);
+  background: linear-gradient(var(--cor-13) 548px, var(--cor-0) 0px);
 }
 
 .comprar {
@@ -17,7 +17,7 @@
   background: url("../../img/dec/dec-bottom-left.svg") no-repeat;
   position: absolute;
   left: 0px;
-  bottom: -100px;
+  bottom: -80px;
   opacity: 0.5;
 }
 
@@ -91,6 +91,27 @@
 
 .comprar-conteudo li + li {
   margin-top: 12px;
+}
+
+.comprar-conteudo ul li {
+  display: flex;
+  align-items: center;
+}
+
+.comprar-conteudo ul li::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.comprar-conteudo ul li:first-of-type::before {
+  background: url("../../img/dec/cart.svg") no-repeat;
+}
+
+.comprar-conteudo ul li:last-of-type::before {
+  background: url("../../img/dec/truck.svg") no-repeat;
 }
 
 .comprar-opcoes input:checked + label + .comprar-conteudo {
