@@ -28,7 +28,6 @@
 .form textarea:focus {
   outline: none;
   border: 1px solid var(--cor-p4);
-  border-radius: 4px;
   box-shadow: 0 0 0 2px var(--cor-p1);
 }
 
