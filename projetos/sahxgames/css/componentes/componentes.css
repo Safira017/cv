@@ -10,6 +10,10 @@
   padding: 40px 20px;
 }
 
+#consoles .console.container {
+  padding: 20px;
+}
+
 .botao {
   display: inline-block;
   padding: 16px 32px;
@@ -62,6 +66,9 @@
   .container {
     padding: 40px 20px;
   }
+  .escolha.container {
+    padding: 20px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -83,9 +90,6 @@
 }
 
 @media (max-width: 400px) {
-  .container {
-    padding: 20px;
-  }
   .subtitulo {
     font-size: 1.1rem;
     text-transform: uppercase;

@@ -8,7 +8,7 @@
 
 .consoles-lista {
   display: grid;
-  gap: 40px;
+  gap: 20px;
 }
 
 .console-item {

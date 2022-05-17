@@ -3,7 +3,7 @@
 }
 
 .perguntas h2 {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .perguntas dl > div {
@@ -13,7 +13,7 @@
 }
 
 dl + dl {
-  margin-top: 20px;
+  margin-top: 32px;
 }
 
 .perguntas button {
@@ -63,6 +63,9 @@ dl + dl {
 
   .perguntas h2 {
     margin-bottom: 20px;
+  }
+  dl + dl {
+    margin-top: 20px;
   }
 }
 

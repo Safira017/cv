@@ -10,7 +10,7 @@
 }
 
 .consoles-home-bg ul {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .consoles-home-bg li:nth-child(odd) {
@@ -152,8 +152,9 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     overflow-x: auto;
-    gap: 40px;
-    padding-bottom: 40px;
+    gap: 32px;
+    padding-bottom: 20px;
+    margin-top: 20px;
   }
   .console-home-bg {
     grid-template-columns: minmax(260px, 1fr);

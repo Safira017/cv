@@ -1,5 +1,5 @@
 .comprar-bg {
-  background: linear-gradient(var(--cor-13) 548px, var(--cor-0) 0px);
+  background: linear-gradient(var(--cor-13) 480px, var(--cor-0) 0px);
 }
 
 .comprar {
@@ -17,7 +17,7 @@
   background: url("../../img/dec/dec-bottom-left.svg") no-repeat;
   position: absolute;
   left: 0px;
-  bottom: -80px;
+  bottom: -100px;
   opacity: 0.5;
 }
 
@@ -25,7 +25,6 @@
   background: var(--cor-12);
   padding: 20px;
   border-radius: 4px;
-  margin-top: 20px;
   position: relative;
 }
 
@@ -36,10 +35,10 @@
 .comprar-opcoes label {
   display: flex;
   align-items: center;
-  gap: 20px 12px;
+  gap: 8px;
   background: var(--cor-9);
   color: var(--cor-11);
-  padding: 8px 16px;
+  padding: 16px;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -77,8 +76,40 @@
 .comprar-opcoes input:checked + label {
   background-color: var(--cor-0);
   color: var(--cor-13);
-  padding: 8px 16px;
+  padding: 16px 16px 0px 16px;
   border-radius: 4px 4px 0px 0px;
+}
+
+.comprar-opcoes input:checked + label + .comprar-conteudo {
+  background: var(--cor-0);
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 20px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.comprar-opcoes input:checked + label + .comprar-conteudo:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.comprar-conteudo picture {
+  display: grid;
+}
+
+.comprar-conteudo span,
+.comprar-conteudo img {
+  grid-area: 1 / 1;
+}
+
+.comprar-conteudo span {
+  place-self: start end;
+  margin-top: 8px;
+  background-color: var(--cor-13);
+  color: var(--cor-0);
+  padding: 8px 12px;
+  border-radius: 4px 0px 0px 4px;
 }
 
 .comprar-conteudo {
@@ -114,30 +145,8 @@
   background: url("../../img/dec/truck.svg") no-repeat;
 }
 
-.comprar-opcoes input:checked + label + .comprar-conteudo {
-  background: var(--cor-0);
-  padding: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 20px;
-  border-radius: 0px 0px 4px 4px;
-}
-
-.comprar-opcoes input:checked + label + .comprar-conteudo:not(:last-of-type) {
-  margin-bottom: 20px;
-}
-
-.comprar-formulario {
-  margin-top: 60px;
-}
-
 .comprar-formulario .botao-comprar {
   grid-column: 1/-1;
-}
-
-.botao-comprar {
-  margin-top: 20px;
 }
 
 @media (max-width: 1000px) {

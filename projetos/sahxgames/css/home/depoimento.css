@@ -19,7 +19,7 @@
 }
 
 .depoimento-item + .depoimento-item {
-  margin-top: 40px;
+  margin-top: 32px;
 }
 
 .depoimento-conteudo {
@@ -57,7 +57,6 @@
 
 @media (max-width: 800px) {
   .depoimento-item {
-    /* background: var(--cor-12); */
     gap: 20px;
   }
   .depoimento-conteudo {
@@ -91,16 +90,6 @@
 }
 
 @media (max-width: 600px) {
-  .depoimento-conteudo {
-    padding: 0px 16px;
-  }
-
-  .depoimento-lista {
-    margin-top: 20px;
-  }
-}
-
-@media (max-width: 450px) {
   .depoimento-item {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -109,6 +98,15 @@
     padding: 10px 20px;
   }
 
+  .depoimento-lista {
+    margin-top: 20px;
+  }
+  .depoimento-item + .depoimento-item {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 450px) {
   .depoimento-conteudo p {
     font-size: 0.875rem;
   }

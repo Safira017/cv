@@ -101,13 +101,14 @@
 }
 
 .console-interno-botao::after {
-  right: 20px;
+  right: 120px;
   position: absolute;
   content: "";
   display: inline-block;
   width: 52px;
   height: 52px;
   background: url("../../img/dec/dec-bottom-right.svg") no-repeat;
+  opacity: 0.2;
 }
 
 @media (max-width: 900px) {
@@ -175,7 +176,7 @@
 }
 
 .escolha h3 {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .escolha-lista {
@@ -187,7 +188,7 @@
 }
 
 .escolha-lista li {
-  min-width: 220px;
+  min-width: 250px;
   margin-bottom: 20px;
 }
 
@@ -234,8 +235,8 @@
   .escolha h4 {
     font-size: 1.3rem;
   }
-  .escolha span {
-    font-size: 1rem;
+  .escolha h3 {
+    margin-bottom: 20px;
   }
 }
 
@@ -257,16 +258,13 @@
     display: inline-block;
     position: absolute;
     right: 30px;
-    top: 50px;
+    top: 20px;
     color: var(--cor-3);
     font-size: 1.5rem;
     font-weight: bold;
     animation: seta 0.5s ease-in 0s infinite alternate;
   }
-}
-
-@media (max-width: 600px) {
-  .escolha h3 {
-    margin: 20px 0px;
+  .escolha-lista {
+    gap: 20px;
   }
 }
