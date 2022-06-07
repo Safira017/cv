@@ -4,7 +4,7 @@
   padding: 40px 20px;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 100px;
+  gap: 60px;
 }
 
 .experiencia .subtitulo {
@@ -23,9 +23,13 @@
   color: #141414;
 }
 
+.lista_experiencia > li + li {
+  margin-top: 20px;
+}
+
 .experiencia_caixa {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   background-color: #f0f0f0;
   border: 1px solid #dbdbdb;
   padding: 20px;
@@ -33,7 +37,6 @@
   position: relative;
   gap: 10px;
   align-items: flex-start;
-  margin-bottom: 20px;
   transition: 0.3s;
   text-decoration: none;
 }
@@ -70,7 +73,8 @@
 
 .experiencia_titulo,
 .experiencia_cargo {
-  font-weight: bold;
+  font-family: "Source Serif Pro";
+  font-weight: 700;
   font-size: 1.125rem;
   color: #000;
 }
@@ -126,8 +130,17 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
+  .experiencia {
+    padding: 20px;
+    gap: 20px;
+  }
+  .experiencia_texto {
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
   .experiencia_caixa {
+    gap: 10px;
     grid-template-columns: 1fr;
   }
 

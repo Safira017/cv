@@ -9,7 +9,7 @@
   padding: 120px 20px 60px 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 100px;
+  gap: 60px;
   align-items: center;
 }
 
@@ -52,8 +52,12 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
+  .footer_container {
+    padding: 40px 20px;
+  }
   .footer .lista_contato {
-    font-size: 1.25rem;
+    font-size: 1rem;
+    gap: 20px;
   }
 }
